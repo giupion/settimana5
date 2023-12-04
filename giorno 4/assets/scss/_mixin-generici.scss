@@ -1,0 +1,22 @@
+@mixin paraMixin($primaryFont, $weigth) {
+
+    font-weight: $weigth;
+    font-size: $primaryFont;
+}
+
+
+@mixin backGMixin($prop, $value) {
+   @if $prop=='color'{ background-#{$prop}: $value;
+    #{$prop}: darken($value, 25%);
+}
+@else{background-#{$prop}:$value;
+background-repeat:no-repeat;
+background-size:contain;}}
+
+div.img{width:250px;
+height:250px;
+background-image:url('../img/bootstrap.png');
+background-size:cover;
+background-repeat: no-repeat;
+
+}

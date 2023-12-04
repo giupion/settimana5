@@ -1,0 +1,45 @@
+@import 'reset';
+@import 'colori';
+@import 'mixin-generici';
+@mixin nomeMixin(){
+    color:white;
+
+    text-align:center;
+}
+
+body {
+    
+    background-color:$light-color;
+h1{color:$darken-color;
+text-align: center;
+text-transform: uppercase;}
+
+h2{@extend h1;
+text-decoration: underline;}
+
+p{@include nomeMixin();
+@include paraMixin(2.3em,normal);}
+}
+
+
+
+div.img{width:250px;
+    height:250px;
+    background-image:url('../img/bootstrap.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    @include backGMixin("image,'url")
+    }
+footer{h3{@include nomeMixin();
+    @include paraMixin(2.3em,normal);}}
+@media screen {}
+
+$padding:0,0.25em,0.5em,0.75em,1em;
+
+$num:0,1,2,3,4,5;
+
+@each $pad in $num{
+    .p-#{$pad}{padding:#{$pad}+'em'}
+}
+
+@for $i from 0 to 5 {.m-#{$i}{margin:#{$i}+'em';}}

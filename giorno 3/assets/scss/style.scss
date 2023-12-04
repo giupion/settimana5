@@ -1,0 +1,14 @@
+
+
+@import '_Font';
+
+@import 'Mixins generici';
+
+body{font-family:$font;
+    @include title-big }
+
+
+    img{ @include floating(8px solid black);
+        }
+
+

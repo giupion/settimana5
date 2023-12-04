@@ -1,0 +1,21 @@
+/*control spazio per suggeriemtno partials*/
+body {
+  background-color: lightblue;
+}
+body h1 {
+  color: #348fac;
+}
+body p {
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.3em;
+}
+
+footer h3 {
+  color: white;
+  text-align: center;
+}
+
+/*maiusc altk per commentare e c per deecommentare*/
+/*a posto di riscere p n volte col mixin una volta sola*//*# sourceMappingURL=style.css.map */
